@@ -70,64 +70,69 @@
         android:textSize="16sp" />
 
     <!-- Botones -->
-    <TableLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
+        android:layout_marginBottom="16dp"
+        android:weightSum="2">
 
-        <TableRow>
-            <Button
-                android:id="@+id/btnRegistrar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Guardar"
-                android:background="@drawable/rounded_button"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:padding="12dp"
-                android:layout_marginEnd="8dp"/>
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp" />
 
-            <Button
-                android:id="@+id/btnActualizar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Actualizar"
-                android:background="@drawable/rounded_button"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:padding="12dp"
-                android:layout_marginStart="8dp"/>
-        </TableRow>
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Actualizar"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
 
-        <TableRow>
-            <Button
-                android:id="@+id/btnListar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Listar"
-                android:background="@drawable/rounded_button"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:padding="12dp"
-                android:layout_marginEnd="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp"
+        android:weightSum="2">
 
-            <Button
-                android:id="@+id/btnBorrar"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Borrar"
-                android:background="@drawable/rounded_button"
-                android:textColor="#FFFFFF"
-                android:textSize="16sp"
-                android:padding="12dp"
-                android:layout_marginStart="8dp"/>
-        </TableRow>
-    </TableLayout>
+        <Button
+            android:id="@+id/btnListar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Listar"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Borrar"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
 
     <!-- ListView -->
     <ListView

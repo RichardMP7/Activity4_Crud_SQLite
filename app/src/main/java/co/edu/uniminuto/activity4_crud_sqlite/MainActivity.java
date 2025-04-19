@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
         UserRepository userRepository = new UserRepository(context, view);
         userRepository.deleteUser(documento);
         listUsers(view);
-        btnBorrar.setVisibility(View.GONE);
+        btnBorrar.setVisibility(View.VISIBLE);
     }
 
 
